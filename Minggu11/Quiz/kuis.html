@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+</script>
+<h1>Data Nama MHS</h1>
+<form id="mhs">
+    <input type="text" placeholder="Nama MHS">
+    <input type="submit" id="tambah" value="+">
+    <p>Jumlah ?</p>
+    <table>
+        <thead>
+            <tr></tr>
+                <td>Nama</td>
+        </thead>
+        <tbody>
+            <!-- Dinamis Berdasarkan Isian -->
+        </tbody>
+    </table>
+</form>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("mhs");
+        var text = "";
+        var i;
+        for (i = 0; i < x.length ;i++) {
+            text += x.elements[i].value + "<br>";
+        }
+        document.getElementById("tambah").innerHTML = text;
+    }
+</script>
+</body>
+</html>
